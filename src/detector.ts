@@ -44,7 +44,7 @@ const extensionNameMap: Record<string, string> = {
 // GitHub Copilot detection thresholds
 const COPILOT_LARGE_INSERT_THRESHOLD = 1; // Lines
 const COPILOT_CHARACTER_INSERT_THRESHOLD = 50; // Characters
-const COPILOT_TIMING_THRESHOLD = 1000; // ms
+const COPILOT_TIMING_THRESHOLD = 6000; // ms
 
 // Cline/Claude detection thresholds
 const CLINE_LARGE_INSERT_THRESHOLD = 2; // Lines
@@ -68,6 +68,7 @@ const AIDER_TIMING_THRESHOLD = 6000; // ms
 
 
 /**
+ * This is a test function
  * Calculate total lines and characters added in a text document change event
  * Also calculates timing information relative to last large insert and extracts the reason
  * 
